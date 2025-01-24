@@ -1,0 +1,28 @@
+{
+  "sensors": {
+    "ruuvitag": {
+      "type": "Temperature and Humidity Sensor",
+      "description": "A wireless Bluetooth Low Energy (BLE) sensor that measures temperature, humidity, and air pressure. Suitable for IoT applications. Technical details:\n- **MAC Address**: C6:F3:CF:4E:F4:B1\n- **BLE Service UUID**: 0x181A (Environmental Sensing)\n- **Characteristics UUIDs**:\n  - Temperature: 0x2A6E (float, in Celsius)\n  - Humidity: 0x2A6F (float, as a percentage)\n  - Pressure: 0x2A6D (float, in hPa)\n  - Battery Level: 0x2A19 (int, in percentage)\n- **Connection Interval**: 100ms\n- **BLE Library**: Use `NimBLEDevice.h` for ESP32.\n- **Notes**: Ensure BLE scanning is enabled to detect the Ruuvitag device and connect using its MAC address.",
+      "technology": "Bluetooth Low Energy (BLE)",
+      "board": "ESP32",
+      "data_format": {
+        "sensor_id": "string",
+        "temperature": "float",
+        "humidity": "float",
+        "pressure": "float",
+        "battery_level": "int"
+      }
+    },
+    "xiaomi_mi_sensor": {
+      "type": "Temperature and Humidity Sensor",
+      "description": "A wireless Bluetooth Low Energy (BLE) sensor that measures temperature and humidity. Commonly used for smart home and IoT applications. Technical details:\n- **MAC Address**: A4:C1:38:2B:67:CD\n- **BLE Service UUID**: 0xFE95 (Xiaomi proprietary service)\n- **Characteristics**:\n  - **Temperature and Humidity Data**: Encoded within Manufacturer Specific Data in BLE advertisements.\n- **Connection**: Operates in passive mode via BLE advertisements (no active connection required).\n- **BLE Library**: Use `BLEDevice.h` for ESP32.\n- **Notes**: The sensor broadcasts temperature and humidity data within its Manufacturer Data field. Parsing requires decoding the proprietary format of Xiaomi BLE advertisements.",
+      "technology": "Bluetooth Low Energy (BLE)",
+      "board": "ESP32",
+      "data_format": {
+        "sensor_id": "string",
+        "temperature": "float",
+        "humidity": "float"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+//test for AnttiGateway library
+
+#include <AnttiGateway.h>
+
+void setup() {
+    Serial.begin(9600);
+    Serial.println("Testing AnttiGateway library");
+}
+
+void loop() {
+    // Add test functionality here
+}

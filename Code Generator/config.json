@@ -1,0 +1,31 @@
+{
+  "boards": ["ESP32 Firebeetle", "Heltec LoRa", "Arduino Uno"],
+  "technologies": {
+    "Bluetooth": "Provide BLE Device MAC address, Characteristics, and supported services.",
+    "LoRaWAN": "Include frequency band and credentials for the gateway.",
+    "Wi-Fi": "Provide SSID, password, and endpoint URL.",
+    "TEST": "Serial prints received data"
+  },
+  "models": {
+    "gpt-4o": {
+      "key": "your_api_key",
+      "description": "Advanced ChatGPT model with better reasoning capabilities."
+    },
+    "gpt-4o-mini": {
+      "key": "your_api_key",
+      "description": "Advanced ChatGPT model with better reasoning capabilities."
+    },
+    "gpt-3.5-turbo": {
+      "key": "your_api_key",
+      "description": "General-purpose ChatGPT model."
+    },
+    "gpt-4": {
+      "key": "your_api_key",
+      "description": "Advanced ChatGPT model with better reasoning capabilities."
+    },
+    "fine-tuned-custom-model": {
+      "key": "your_api_key_for_fine_tuned_model",
+      "description": "Fine-tuned model for IoT-specific tasks."
+    }
+  }
+}
