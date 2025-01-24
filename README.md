@@ -1,7 +1,11 @@
 # Affordable_Modular_IoT_Gateway
-Affordable Modular IoT Gateway for IoT-Sensor Data Collection and a Large Language Model-powered programming tool 
+Affordable Modular IoT Gateway for IoT-Sensor Data Collection and a LLM-powered programming tool 
 
-This repository contains the source code and documentation for the Affordable Modular IoT Gateway, a flexible and modular gateway architecture that simplifies the development and prototyping of IoT systems. The gateway is designed to interface with various wireless technologies, sensors, and cloud platforms, enabling accelerated IoT implementations and promoting innovative research and development.
+This repository contains the source code and documentation for the Affordable Modular IoT Gateway and for a Large Language Model-powered programming tool. 
+
+- The Affordable Modular IoT Gateway is a flexible and modular gateway architecture that simplifies the development and prototyping of IoT systems. The gateway is designed to interface with various wireless technologies, sensors, and cloud platforms, enabling accelerated IoT implementations and promoting innovative research and development.
+- LLM-powered programming tool can assist in programmin the modules of the Affordable Modular IoT Gateway.
+
 
 # Features
 - Modular gateway architecture based on Arduino-compatible microcontroller development boards
@@ -23,7 +27,7 @@ The Affordable Modular IoT Gateway has been tested using various wireless techno
 ![image](https://user-images.githubusercontent.com/49767803/234206661-8629095c-5fdf-40fa-9fad-98732207f967.png)
 
 # Getting Started
-Please refer to the documentation provided in this repository for detailed information on the hardware and software requirements, setup instructions, and example implementations. The templates for Module A and Module B are a good strating point.
+Please refer to the documentation provided in this repository for detailed information on the hardware and software requirements, setup instructions, and example implementations. The templates and examples for Module A and Module B are a good strating point.
 
 # License
 This project is open-source and available under the MIT License.
